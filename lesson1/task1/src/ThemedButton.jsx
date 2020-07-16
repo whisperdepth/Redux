@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeContext } from "./themes-context";
 
-class ThemeButton extends React.Component {
+class ThemedButton extends React.Component {
   render() {
     const { background, fontColor } = this.context;
     const style = {
@@ -13,6 +13,6 @@ class ThemeButton extends React.Component {
   }
 }
 
-ThemeButton.contextType = ThemeContext;
+ThemedButton.contextType = ThemeContext;
 
-export default ThemeButton;
+export default ThemedButton;
