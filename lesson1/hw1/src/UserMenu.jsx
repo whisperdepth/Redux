@@ -3,7 +3,6 @@ import { UserContext } from "./user-context";
 
 class UserMenu extends React.Component {
   render() {
-    console.log(this.context);
     const { name, avatar_url } = this.context;
 
     return (
