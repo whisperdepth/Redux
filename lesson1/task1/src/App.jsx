@@ -6,7 +6,7 @@ const { dark, light } = themes;
 
 class App extends React.Component {
   state = {
-    theme: dark,
+    theme: light,
   };
 
   toggleTheme = () => {
