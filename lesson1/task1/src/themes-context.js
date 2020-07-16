@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 export const themes = {
-    dark: {
-        fontColor: "#fff",
-        background: '#222',
-    },
+  dark: {
+    fontColor: "#ffffff",
+    background: "#222222",
+  },
 
-    light: {
-        fontColor: "#000",
-        background: "#eee",
-    }
-}
+  light: {
+    fontColor: "#000000",
+    background: "#eeeeee",
+  },
+};
 
 export const ThemeContext = React.createContext(themes.dark);
