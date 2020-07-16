@@ -21,9 +21,9 @@ class App extends React.Component {
     return (
       <div>
         <ThemeContext.Provider value={this.state.theme}>
-          <ThemeButton onClick={this.toggleTheme}>Dynamic theme</ThemeButton>
+          <ThemeButton onClick={this.toggleTheme}>Dynamic Theme</ThemeButton>
         </ThemeContext.Provider>
-        <ThemeButton onClick={this.toggleTheme}>Default theme</ThemeButton>
+        <ThemeButton onClick={this.toggleTheme}>Default Theme</ThemeButton>
       </div>
     );
   }
