@@ -2,18 +2,16 @@ import React from "react";
 import ThemeButton from "./ThemesButton";
 import { themes, ThemeContext } from "./themes-context";
 
-const { dark, light } = themes;
-
 class App extends React.Component {
   state = {
-    theme: light,
+    theme: themes.light,
   };
 
   toggleTheme = () => {
     const newTheme =
-      this.state.theme === dark
-        ? (this.state.theme = light)
-        : (this.state.theme = dark);
+      this.state.theme === themes.dark
+        ? (this.state.theme = themes.light)
+        : (this.state.theme = themes.dark);
     this.setState({
       theme: newTheme,
     });
