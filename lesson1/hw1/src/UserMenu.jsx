@@ -7,7 +7,7 @@ class UserMenu extends React.Component {
 
     return (
       <>
-        <span className="menu__greeting">Hello, {name}</span>
+        <span className="menu__greeting">{`Hello, ${name}`}</span>
         <img alt="User Avatar" src={avatar_url} className="menu__avatar"></img>
       </>
     );
