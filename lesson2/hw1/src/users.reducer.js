@@ -1,19 +1,22 @@
-const usersList = [];
 import { ADDUSER, DELETEUSER } from "./users.actions";
 
-export default (state = usersList, action) => {
+const initialValue = { usersList: [] };
+export default (state = initialValue, action) => {
   switch (action.type) {
     case ADDUSER:
-      return [
+      return {
         ...state,
-        {
+        usersList: state.usersList.concat({
           id: action.user.id,
           name: action.user.name,
-        },
-      ];
+        }),
+      };
 
     case DELETEUSER:
-      return state.filter((user) => user.id !== action.id);
+      return {
+        ...state,
+        usersList: state.usersList.filter((user) => user.id !== action.id),
+      };
 
     default:
       return state;
