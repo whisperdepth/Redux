@@ -28,7 +28,7 @@ store.subscribe(() => {
   const history = store
     .getState()
     .history.map((value) => (value > 0 ? (value = `+${value}`) : `${value}`))
-    .join("")
+    .join("");
 
   resultElement.textContent =
     history.length === 0 ? null : `${history} = ${value}`;
