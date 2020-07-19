@@ -2,7 +2,7 @@ import { ADD_PRODUCT, REMOVE_PRODUCT } from "./cart.actions";
 
 const initialValue = { products: [] };
 
-export default (state = initialValue, action) => {
+export const cartReducer = (state = initialValue, action) => {
   switch (action.type) {
     case ADD_PRODUCT:
       return {
