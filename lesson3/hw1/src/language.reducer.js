@@ -1,6 +1,8 @@
 import { SET_LANGUAGE } from "./language.actions";
 
-export default (state = "en", action) => {
+const initialstate = "en";
+
+export default (state = initialstate, action) => {
   switch (action.type) {
     case SET_LANGUAGE:
       return action.payload.lang;
