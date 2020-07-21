@@ -4,8 +4,9 @@ import * as pageActions from "./page/page.actions";
 import User from "./User.jsx";
 import Pagination from "./Pagination.jsx";
 
+const itemsPerPage = 3;
+
 const UsersList = ({ users, page, nextPage, prevPage }) => {
-  const itemsPerPage = 3;
   const from = page * itemsPerPage;
   const to = 3 + page * itemsPerPage;
 
