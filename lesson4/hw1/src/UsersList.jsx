@@ -8,7 +8,7 @@ const itemsPerPage = 3;
 
 const UsersList = ({ users, page, nextPage, prevPage }) => {
   const from = page * itemsPerPage;
-  const to = 3 + page * itemsPerPage;
+  const to = itemsPerPage + page * itemsPerPage;
 
   return (
     <div>
