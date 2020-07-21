@@ -46,8 +46,6 @@ const mapDispatch = {
   deleteUser: usersActions.deleteUser,
 };
 
-const connector = connect(mapState, mapDispatch);
+export default  connect(mapState, mapDispatch)(Users);
 
-const ConnectedUsers = connector(Users);
 
-export default ConnectedUsers;
