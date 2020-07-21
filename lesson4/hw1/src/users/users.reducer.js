@@ -18,28 +18,42 @@ const initialValue = {
     {
       id: "id-3",
       age: 45,
-      name: "Sam",
+      name: "Justin",
     },
-
     {
       id: "id-4",
-      age: 31,
-      name: "Blob",
+      age: 45,
+      name: "Franklin",
     },
     {
       id: "id-5",
-      age: 74,
-      name: "Toms",
+      age: 45,
+      name: "John",
     },
     {
       id: "id-6",
-      age: 108,
-      name: "Tado",
+      age: 45,
+      name: "Andrew",
     },
     {
       id: "id-7",
-      age: 15,
-      name: "Sami",
+      age: 45,
+      name: "Pol",
+    },
+    {
+      id: "id-8",
+      age: 45,
+      name: "Ron",
+    },
+    {
+      id: "id-9",
+      age: 45,
+      name: "Harry",
+    },
+    {
+      id: "id-10",
+      age: 45,
+      name: "Anna",
     },
   ],
 };
