@@ -2,6 +2,6 @@ export const usersListSelector = (state) => {
   return state.users.usersList;
 };
 
-export const pageSelector = (state) => {
+export const currentPageSelector = (state) => {
   return state.page;
 };
