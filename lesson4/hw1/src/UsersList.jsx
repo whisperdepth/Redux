@@ -5,14 +5,15 @@ import User from "./User.jsx";
 import Pagination from "./Pagination.jsx";
 
 const UsersList = ({ users, page, nextPage, prevPage }) => {
-  const from = page * 3;
-  const to = 3 + page * 3;
+  const itemsPerPage = 3;
+  const from = page * itemsPerPage;
+  const to = 3 + page * itemsPerPage;
 
   return (
     <div>
       <Pagination
         currentPage={page}
-        itemsPerPage={3}
+        itemsPerPage={itemsPerPage}
         totalItems={users.length}
         goNext={nextPage}
         goPrev={prevPage}
