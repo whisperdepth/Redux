@@ -1,6 +1,6 @@
 import { FILTER_USERS } from "./users.actions";
 
-const users = [
+const usersList = [
   {
     id: "id-0",
     age: 21,
@@ -59,20 +59,25 @@ const users = [
 ];
 
 const initialValue = {
-  filterText: "",
-  usersList: users,
+  users: {
+    filterText: "",
+    usersList: usersList,
+  },
 };
 
 export default (state = initialValue, action) => {
   switch (action.type) {
     case FILTER_USERS:
-      console.log(1)
+      console.log(1);
       return {
         ...state,
-        filterText: action.payload.filterText,
+        users: {
+          filterText: action.payload.filterText,
+          usersList: usersList,
+        },
       };
     default:
-      console.log(2)
+      console.log(2);
       return state;
   }
 };
