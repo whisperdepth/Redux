@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as usersActions from "./users.actions";
-import { getUserData } from "./users.gateway";
 
 class SearchField extends React.Component {
   state = {
