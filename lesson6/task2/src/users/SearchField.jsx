@@ -26,7 +26,7 @@ class SearchField extends React.Component {
           type="text"
           className="name-form__input"
         />
-        <button onClick={this.handleUserSearch} className="btn">
+        <button onClick={this.handleUserSearch} className="name-form__btn btn">
           Show
         </button>
       </div>

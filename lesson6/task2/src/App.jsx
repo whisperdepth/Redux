@@ -1,6 +1,6 @@
 import React from "react";
-import store from "./store";
 import { Provider } from "react-redux";
+import store from "./store";
 import UserInfo from "./users/UserInfo";
 import SearchField from "./users/SearchField";
 
