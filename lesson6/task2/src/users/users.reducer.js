@@ -1,5 +1,3 @@
-import store from "../../../task1/src/store";
-
 import { SHOW_SPINNER, USER_DATA_RECEIVED } from "./users.actions";
 
 const initialData = {
